@@ -20,7 +20,7 @@ class ver:
 MIT License
 -----------
 
-Copyright (c) 2020 Dalton Overlin https://github.com/Dalton-Overlin/Vintag
+Copyright (c) 2020 Dalton Overlin https://github.com/Dalton-Overlin/CrayTag
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
 files (the "Software"), to deal in the Software without
