@@ -18,7 +18,7 @@ I have compiled CrayTag to run on Windows. There are two compiled versions of Cr
 
 This version takes longer to launch, but the benefits are that all files are stored in a single executable file.
 
-[Download the CrayTag.exe](http://example.com/)
+[Download the CrayTag.exe](https://github.com/Dalton-Overlin/CrayTag/blob/master/Windows%20Executables/CrayTag.exe)
 
 ## Instructions
 
@@ -27,7 +27,7 @@ Download CrayTag.exe and run it on a Windows OS. I have verified this program to
 ## ***Version Two***
 This version launches quicker, but all program files are extracted so it looks a little messy. You would probably want to create a shortcut to the CrayTag.exe file to make it easier to launch.
 
-[Download the CrayTag.zip](http://example.com/)
+[Download the CrayTag.zip](https://github.com/Dalton-Overlin/CrayTag/blob/master/Windows%20Executables/CrayTag.zip)
 
 ## Instructions
 
@@ -37,7 +37,7 @@ Download the zipped file, then extract the zipped file. Once you do you can run 
 
  - First, download the Python script.
 
-[Download CrayTag.pyw](http://example.com/)
+[Download CrayTag.pyw](https://github.com/Dalton-Overlin/CrayTag/blob/master/CrayTag.pyw)
 
 This program is built using Python 3, so if you want to run the raw code of this program you will need a way of running Python 3 scripts. This program depends on these modules below.
 
