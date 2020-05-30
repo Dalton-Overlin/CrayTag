@@ -6,7 +6,7 @@ Want free software to resize all album covers in your mp3 music library? So did 
 
 This program was originally made to resize album covers. But it quickly turned into something larger, I added options to renumber mp3 files, resize external album covers, embedded album covers, and it will even alert you if album art (along with other data) is missing so you can correct the issue. There are options in the program to modify all the operations so it will do only what you want it too. There are several and I mean several things this program can do. It automates frivolous tasks and best of all its got a graphical interface so you don't need to run it in a command-line. 
 
-![Capture](https://user-images.githubusercontent.com/30564402/83311341-2981e380-a1cc-11ea-846a-349a850e27ce.PNG)
+![Capture](https://user-images.githubusercontent.com/30564402/83337266-2e4fa180-a277-11ea-920f-a48105712ab8.PNG)
 
 I am releasing the raw python code so you can look over the code to verify its safety if you so desire. I have also compiled the program to run on Windows, so all you have to do is download the Windows executable file and run it like any other program. If you don't trust me that's fine, just download the source code, look it over to verify its safety, and compile it yourself. Or just run it as a regular Python file. 
 
