@@ -1,12 +1,12 @@
 class ver:
-    sion="2.1" # Version number of program. # ver.sion
+    sion="2.2" # Version number of program. # ver.sion
 """
 ##############################
     CrayTag.
 ##############################
     Coded by: Dalton Overlin
 ##########################################################
-    Last Code Revision Date: May. 26th, 2020
+    Last Code Revision Date: Jul. 11th, 2020
 ##########################################################
     This is freeware! FREEWARE!
     So if someone asked you to pay for this program
@@ -65,62 +65,73 @@ def installer(x):
         ravage()
 sys.setrecursionlimit(100000)
 try:
-    import random
-except:
-    installer('random')
-    import random
-try:
-    import string
-except:
-    installer('string')
-    import string
-try:
-    import tkinter
+    import random, string, tkinter, shutil, time, datetime, eyed3, tinytag
+    from tinytag import TinyTag
     from tkinter import *
     from tkinter import filedialog
     from tkinter import PhotoImage
     import tkinter.font as tkFont
     import tkinter as tk
-except:
-    installer('tkinter')
-    import tkinter
-    from tkinter import *
-    from tkinter import filedialog
-    from tkinter import PhotoImage
-    import tkinter.font as tkFont
-    import tkinter as tk
-try:
-    import shutil
-except:
-    installer('shutil')
-    import shutil
-try:
-    import time
-except:
-    installer('time')
-    import time
-try:
-    import datetime
-except:
-    installer('datetime')
-    import datetime
-try:
-    import eyed3
-except:
-    installer('eyed3')
-    import eyed3
-try:
-    import tinytag
-    from tinytag import TinyTag
-except:
-    installer('tinytag')
-    import tinytag
-    from tinytag import TinyTag
-try:
     from PIL import ImageTk, Image
 except:
-    installer('pillow')
-    from PIL import ImageTk, Image
+    print("An import failed, attempting phase 2 import.")
+    try:
+        import random
+    except:
+        installer('random')
+        import random
+    try:
+        import string
+    except:
+        installer('string')
+        import string
+    try:
+        import tkinter
+        from tkinter import *
+        from tkinter import filedialog
+        from tkinter import PhotoImage
+        import tkinter.font as tkFont
+        import tkinter as tk
+    except:
+        installer('tkinter')
+        import tkinter
+        from tkinter import *
+        from tkinter import filedialog
+        from tkinter import PhotoImage
+        import tkinter.font as tkFont
+        import tkinter as tk
+    try:
+        import shutil
+    except:
+        installer('shutil')
+        import shutil
+    try:
+        import time
+    except:
+        installer('time')
+        import time
+    try:
+        import datetime
+    except:
+        installer('datetime')
+        import datetime
+    try:
+        import eyed3
+    except:
+        installer('eyed3')
+        import eyed3
+    try:
+        import tinytag
+        from tinytag import TinyTag
+    except:
+        installer('tinytag')
+        import tinytag
+        from tinytag import TinyTag
+    try:
+        from PIL import ImageTk, Image
+    except:
+        installer('pillow')
+        from PIL import ImageTk, Image
 eyed3.log.setLevel("ERROR")
 class dirTree:
     A=os.getcwd()
@@ -153,6 +164,8 @@ class ram:
     KillThread=False # DONE
 class maxx:
     div=' ' # This can be anything like ' ', ' - ', etc.  maxx.div
+def rep(hexa):
+    return hexa.replace("/", "").replace("\\", "").replace(":", "").replace("*", "").replace("?", "").replace("\"", "").replace("'", "").replace("<", "").replace(">", "").replace("|", "")
 def reno(Input):
     if type(Input)!=list:
         print('Input must be list!')
@@ -239,7 +252,8 @@ def reno(Input):
         temp=str(cova)
         while len(temp) != tim:
             temp='0'+temp
-        holder.append(temp+t)
+        victor=rep(temp+t)
+        holder.append(victor)
         cova+=1
     return holder
 class ex:
@@ -305,35 +319,6 @@ def handler(available,issue): # This will handle missing album art and additiona
             taffy.dataToReturn=str(fbi)
             roota.destroy()
             return
-            '''
-            try:
-                zat.canva.destroy()
-                image2 = Image.open(fbi)
-                size = 300, 300
-                image2.thumbnail(size,Image.ANTIALIAS)
-                photo2 = ImageTk.PhotoImage(image2)
-                zat.canva=tkinter.Canvas(roota,  height=300, width=300,bg=zat.canC,highlightthickness=1, highlightbackground="cyan")
-                zat.canva.pack()
-                zat.canva.place(bordermode=OUTSIDE,height=300,width=300,relx=0,rely=0.06,anchor=NW)
-                labelh = Label(zat.canva,bg='#000099',fg='#00ffff',activebackground='#00ffff',activeforeground='#000099',image=photo2)
-                labelh.image = photo2
-                labelh.place(bordermode=OUTSIDE,relx=0,rely=0,width=302,height=302)
-                flip=fbi.split('\\')
-                flip=flip[-1]
-                flip=fbi.split('/')
-                flip=flip[-1]
-                msa4.config(text=str(flip))
-                taffy.dataToReturn=str(fbi)
-            except:
-                try:
-                    zat.canva.destroy()
-                except:
-                    pass
-                acv.config(text='Must Choose JPG/JPEG Image...')
-                zat.canva=tkinter.Canvas(roota,  height=300, width=300,bg=zat.canC,highlightthickness=1, highlightbackground="cyan")
-                zat.canva.pack()
-                zat.canva.place(bordermode=OUTSIDE,height=300,width=300,relx=0,rely=0.06,anchor=NW)
-            '''
         a = tkinter.Button(roota,text ="Open Cover Selector",bg='#000099',fg='#00ffff',activebackground='#00ffff',activeforeground='#000099',command=upd, anchor='c',font=('Helvetica', 14, 'bold'))
         a.pack()
         a.place(bordermode=OUTSIDE, height=50, width=300,relx=0.0, rely=1.0, anchor=SW)
